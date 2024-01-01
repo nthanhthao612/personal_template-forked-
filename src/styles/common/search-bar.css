@@ -1,0 +1,82 @@
+.large.search-bar {
+  width: 25vw;
+  box-shadow: rgba(0, 0, 0, 0.35) 0 0.1vw 0.2vw;
+  border-radius: 0.4vw 0.4vw 0.4vw 0.4vw;
+}
+
+.search-bar_text {
+  margin-left: 0.2vw;
+  border: none;
+  width: 100%;
+  padding: 0.3vw;
+  height: 1.4vw;
+  border-radius: 0.3vw;
+  outline: none;
+  color: #9dbfaf;
+  &:focus {
+    box-shadow: rgba(60, 64, 67, 0.3) 0px 1px 2px 0px,
+      rgba(60, 64, 67, 0.15) 0px 2px 6px 2px;
+  }
+}
+
+.search-bar_button {
+  border-radius: 10%;
+  padding: 0.3vw;
+  width: fit-content;
+  height: fit-content;
+  &:hover {
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+      rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+  }
+}
+
+.search-bar_button > img {
+  width: 1.25vw;
+  height: 1.25vw;
+}
+
+.result-list {
+  border-top: none;
+  margin-top: 0.2vw;
+  max-height: 25vh;
+  width: 100%;
+  overflow: scroll;
+  overflow-x: hidden;
+  border-radius: 0 0 0.4vw 0.4vw;
+  box-shadow: rgba(0, 0, 0, 0.35) 0 0.1vw 0.2vw;
+}
+
+.result-item {
+  width: 96%;
+  margin: 0.2vw 0 0.2vw 0;
+  border-radius: 0.2vw;
+  &:hover {
+    background-color: #999;
+    box-shadow: rgba(0, 0, 0, 0.35) 0 0.1vw 0.2vw;
+  }
+}
+
+.result-item > * {
+  margin: 0.4vw;
+}
+
+.result-item > img {
+  width: 2.3vw;
+}
+
+.result-item > p {
+  overflow: hidden;
+}
+
+::-webkit-scrollbar {
+  width: 0.4vw;
+}
+
+::-webkit-scrollbar-track {
+  background: transparent;
+}
+
+::-webkit-scrollbar-thumb {
+  background-color: #999;
+  border-radius: 20px;
+}

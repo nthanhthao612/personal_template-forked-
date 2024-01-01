@@ -1,10 +1,11 @@
-import "./styles.css";
+import CommonSearchBar from "./components/common/search-bar/common-search-bar";
+import RoundedButton from "./components/common/button/rounded-button";
 
 export default function App() {
   return (
     <div className="App">
-      <h1>Hello CodeSandbox</h1>
-      <h2>Start editing to see some magic happen!</h2>
+      <CommonSearchBar size={"large"} />
+      <RoundedButton text={`Login`} />
     </div>
   );
 }
